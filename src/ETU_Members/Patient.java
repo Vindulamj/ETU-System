@@ -10,5 +10,13 @@ package ETU_Members;
  * @author User
  */
 public class Patient {
-    
+     private String hospitalID;
+     private String age;
+     private String catogory;
+     private String dateOfBirth;
+     private String nationality;
+     private String address;
+     private String occupation;
+     private String bloddGroup;
+     private String email;
 }

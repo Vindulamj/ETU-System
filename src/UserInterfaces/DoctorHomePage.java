@@ -54,7 +54,7 @@ public class DoctorHomePage extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(0, 102, 153));
         jPanel5.setPreferredSize(new java.awt.Dimension(687, 103));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UInterfaces/Microfuse Solutions1.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UserInterfaces/Microfuse Solutions1.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -63,7 +63,7 @@ public class DoctorHomePage extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(1334, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -71,7 +71,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="1334" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -89,7 +89,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/UInterfaces/Microfuse Solutions1.png"/>
+              <Image iconType="3" name="/UserInterfaces/Microfuse Solutions1.png"/>
             </Property>
           </Properties>
         </Component>

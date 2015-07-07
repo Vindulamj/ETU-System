@@ -10,5 +10,5 @@ package ETU_Members;
  * @author User
  */
 public class Nurse {
-    
+    private String hospitalID;
 }

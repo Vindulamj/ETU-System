@@ -265,7 +265,7 @@ public class PatientRegistration extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -501,12 +501,11 @@ public class PatientRegistration extends javax.swing.JFrame {
                 .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
                 .addGroup(pnl_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(pnl_titleLayout.createSequentialGroup()
-                            .addComponent(jLabel33)
-                            .addGap(48, 48, 48)
-                            .addComponent(jLabel32))
-                        .addComponent(jLabel30))
+                    .addGroup(pnl_titleLayout.createSequentialGroup()
+                        .addComponent(jLabel33)
+                        .addGap(48, 48, 48)
+                        .addComponent(jLabel32))
+                    .addComponent(jLabel30)
                     .addComponent(jLabel29))
                 .addContainerGap(1315, Short.MAX_VALUE))
         );
@@ -686,3 +685,4 @@ public class PatientRegistration extends javax.swing.JFrame {
     private javax.swing.JTextField txt_regNo;
     // End of variables declaration//GEN-END:variables
 }
+// Interface originally developed by Vindula Jayawardana

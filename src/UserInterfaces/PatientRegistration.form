@@ -102,6 +102,7 @@
                 </TitledBorder>
               </Border>
             </Property>
+            <Property name="doubleBuffered" type="boolean" value="false"/>
           </Properties>
 
           <Layout>

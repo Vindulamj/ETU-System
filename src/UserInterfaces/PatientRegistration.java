@@ -112,6 +112,7 @@ public class PatientRegistration extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Hospital Main Registration"));
+        jPanel2.setDoubleBuffered(false);
 
         lbl_regNo.setText("Registration No.");
 

@@ -480,3 +480,4 @@ public class Billing extends javax.swing.JFrame {
     private javax.swing.JTable tbl_billing;
     // End of variables declaration//GEN-END:variables
 }
+ // UI originally Developed By Vindula Jayawardana

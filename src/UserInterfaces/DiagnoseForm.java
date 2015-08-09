@@ -50,9 +50,9 @@ public class DiagnoseForm extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         MedicalPane = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        historyBtn = new javax.swing.JButton();
+        treatmentBtn = new javax.swing.JButton();
+        diagnoseBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -111,22 +111,27 @@ public class DiagnoseForm extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Command Panel"));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/User-Files-icon.png"))); // NOI18N
-        jButton3.setText("Patient History");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        historyBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/User-Files-icon.png"))); // NOI18N
+        historyBtn.setText("Patient History");
+        historyBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                historyBtnActionPerformed(evt);
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Healthcare-Doctor-Suitecase-icon.png"))); // NOI18N
-        jButton2.setText("Treatment");
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Healthcare-Treatment-Plan-icon.png"))); // NOI18N
-        jButton1.setText("Diagnose");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        treatmentBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Healthcare-Doctor-Suitecase-icon.png"))); // NOI18N
+        treatmentBtn.setText("Treatment");
+        treatmentBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                treatmentBtnActionPerformed(evt);
+            }
+        });
+
+        diagnoseBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Healthcare-Treatment-Plan-icon.png"))); // NOI18N
+        diagnoseBtn.setText("Diagnose");
+        diagnoseBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                diagnoseBtnActionPerformed(evt);
             }
         });
 
@@ -137,20 +142,20 @@ public class DiagnoseForm extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(historyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(treatmentBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(diagnoseBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(diagnoseBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(treatmentBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(historyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -182,7 +187,7 @@ public class DiagnoseForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void diagnoseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diagnoseBtnActionPerformed
         if (tabs.containsKey("Diagnose")) {
             MedicalPane.setSelectedIndex(tabs.get("Diagnose"));
         } else {
@@ -191,9 +196,9 @@ public class DiagnoseForm extends javax.swing.JFrame {
             MedicalPane.setSelectedIndex(MedicalPane.getTabCount()-1);
         }
 // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_diagnoseBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
         //MedicalPane.addTab("History", PatientHistory.getNew_tab());
          if (tabs.containsKey("History")) {
             MedicalPane.setSelectedIndex(tabs.get("History"));
@@ -204,7 +209,18 @@ public class DiagnoseForm extends javax.swing.JFrame {
             
         }
 // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_historyBtnActionPerformed
+
+    private void treatmentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_treatmentBtnActionPerformed
+        if (tabs.containsKey("Treatment")) {
+            MedicalPane.setSelectedIndex(tabs.get("Treatment"));
+        } else {
+            tabs.put("Treatment", MedicalPane.getTabCount());
+            MedicalPane.addTab("Treatment", new Treatment());
+            MedicalPane.setSelectedIndex(MedicalPane.getTabCount()-1);
+        }
+// TODO add your handling code here:
+    }//GEN-LAST:event_treatmentBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -255,9 +271,8 @@ public class DiagnoseForm extends javax.swing.JFrame {
     private HashMap<String, Integer> tabs;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane MedicalPane;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton diagnoseBtn;
+    private javax.swing.JButton historyBtn;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel32;
@@ -265,5 +280,6 @@ public class DiagnoseForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton treatmentBtn;
     // End of variables declaration//GEN-END:variables
 }

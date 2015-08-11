@@ -23,11 +23,11 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel3" alignment="0" pref="1409" max="32767" attributes="0"/>
+          <Component id="jPanel3" alignment="0" pref="1424" max="32767" attributes="0"/>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="76" max="32767" attributes="0"/>
               <Component id="MedicalPane" min="-2" pref="1127" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -82,7 +82,7 @@
                           <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="727" max="32767" attributes="0"/>
+                  <EmptySpace pref="742" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
